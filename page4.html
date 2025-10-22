@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v6.1.4, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v6.1.4, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo2.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Compra de Entradas</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=jRQSdp"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=jRQSdp" type="text/css">
+
+  
+  
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu menu3 cid-v0mH9lsX5o" once="menu" id="menu03-h">
+	
+
+	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+		<div class="container">
+			<div class="navbar-brand">
+				
+				
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
+						<a class="nav-link link text-black text-primary display-4" href="index.html">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black show text-primary display-4" href="page3.html" aria-expanded="false">CARTELERA</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black text-primary display-4" href="page4.html">TICKETS</a>
+					</li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page1.html">SALAS</a></li></ul>
+                    <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="page2.html">Crear Cuenta</a></div>
+                </div>
+				
+			</div>
+		</div>
+	</nav>
+</section>
+
+<section data-bs-version="5.1" class="form03 cid-v0mQPljjA4" id="form03-j">
+    
+
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg item-wrapper">
+                <div class="mbr-section-head mb-5">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>TICKET</strong></h3>
+                    
+                </div>
+                <div class="col-lg-12 mx-auto mbr-form" data-form-type="formoid">
+                    <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="DYyvq1k6Moqe/0qplC4EI+lMfpHrHGmVlXyHLvgRJCflJb5Mi5rHe+Pi172es6Nd42LcVSiLmr8XbbiBtarlGxGbBrbnzSHj/oMQl2rp1RublTPklKYWPbguZEdJIJgA">
+                        <div class="row">
+                            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Compra realizada con éxito!</div>
+                            <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                                Error al procesar la compra. Inténtalo de nuevo.
+                            </div>
+                        </div>
+                        <div class="dragArea row">
+                            <!-- Nombre del solicitante -->
+                            <div class="col-12 form-group mb-3" data-for="nombre">
+                                <input type="text" name="nombre" placeholder="Nombre del Solicitante" data-form-field="nombre" class="form-control" value="" id="nombre-form03-j" required>
+                            </div>
+                            <!-- Correo -->
+                            <div class="col-12 form-group mb-3" data-for="email">
+                                <input type="email" name="email" placeholder="Correo Electrónico" data-form-field="email" class="form-control" value="" id="email-form03-j" required>
+                            </div>
+                            <!-- Cantidad de entradas -->
+                            <div class="col-12 form-group mb-3" data-for="cantidad">
+                                <input type="number" name="cantidad" placeholder="Cantidad de Entradas" data-form-field="cantidad" class="form-control" value="" id="cantidad-form03-j" min="1" max="10" required>
+                            </div>
+                            <!-- Número de Salas -->
+                            <div class="col-12 form-group mb-3" data-for="sala">
+                                <select name="sala" data-form-field="sala" class="form-control" id="sala-form03-j" required onchange="actualizarHorarios()">
+                                    <option value="">Seleccionar Sala</option>
+                                    <option value="sala1">Sala 1</option>
+                                    <option value="sala2">Sala 2</option>
+                                    <option value="sala3">Sala 3</option>
+                                </select>
+                            </div>
+                            <!-- Horarios y Funciones -->
+                            <div class="col-12 form-group mb-3" data-for="horario">
+                                <select name="horario" data-form-field="horario" class="form-control" id="horario-form03-j" required>
+                                    <option value="">Primero selecciona una sala</option>
+                                </select>
+                            </div>
+                            <!-- Forma de Pago -->
+                            <div class="col-12 form-group mb-3" data-for="pago">
+                                <select name="pago" data-form-field="pago" class="form-control" id="pago-form03-j" required onchange="actualizarFormaDePago()">
+                                    <option value="">Forma de Pago</option>
+                                    <option value="tarjeta_debito">Tarjeta de Débito</option>
+                                    <option value="tarjeta_credito">Tarjeta de Crédito</option>
+                                    <option value="transferencia">Transferencia</option>
+                                </select>
+                            </div>
+                            <!-- Campos para Tarjeta de Crédito/Débito (ocultos por defecto) -->
+                            <div id="datos-tarjeta" style="display: none;" class="col-12">
+                                <div class="form-group mb-3" data-for="numero_tarjeta">
+                                    <input type="text" name="numero_tarjeta" placeholder="Número de Tarjeta" data-form-field="numero_tarjeta" class="form-control" value="" id="numero_tarjeta-form03-j">
+                                </div>
+                                <div class="form-group mb-3" data-for="nombre_tarjeta">
+                                    <input type="text" name="nombre_tarjeta" placeholder="Nombre del Titular" data-form-field="nombre_tarjeta" class="form-control" value="" id="nombre_tarjeta-form03-j">
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 form-group mb-3" data-for="fecha_vencimiento">
+                                        <input type="text" name="fecha_vencimiento" placeholder="Vencimiento (MM/AA)" data-form-field="fecha_vencimiento" class="form-control" value="" id="fecha_vencimiento-form03-j">
+                                    </div>
+                                    <div class="col-md-6 form-group mb-3" data-for="cvc">
+                                        <input type="text" name="cvc" placeholder="CVC" data-form-field="cvc" class="form-control" value="" id="cvc-form03-j">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Campos para Transferencia (ocultos por defecto) -->
+                            <div id="datos-transferencia" style="display: none;" class="col-12">
+                                <div class="form-group mb-3">
+                                    <p class="mbr-text mbr-fonts-style display-7">
+                                        Para completar la Compra, realiza la transferencia a la siguiente cuenta:
+                                        <br><strong>Alias:</strong> TEATRO.JUJUY.MP
+                                        <br><strong>CBU:</strong> 0000003100055544433322
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Términos y Condiciones -->
+                            <div class="col-12 form-group mb-3">
+                                <div class="form-check">
+                                    <input type="checkbox" name="terminos" class="form-check-input" id="terminos-form03-j" required>
+                                    <label class="form-check-label" for="terminos-form03-j">
+                                        Acepto los <a href="#" class="text-primary">términos y condiciones</a> de la Compra
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- Botón de Reserva -->
+                            <div class="col-12 align-center mbr-section-btn">
+                                <button type="button" class="btn btn-primary display-7" onclick="procesarCompra()">Comprar Entrada</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="image-wrapper">
+                    <img class="w-100" src="assets/images/ticket-jujuy2.jpg" alt="Mobirise Website Builder">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="footer2 cid-v0mTwxJxdH" once="footers" id="footer02-k">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row flex-row-reverse">
+            <div class="col-12 col-lg-6 center mt-2 mb-3">
+                <p class="mbr-fonts-style copyright mb-0 display-7">
+                    © Copyright 2030 Mobirise - All Rights Reserved
+                </p>
+            </div>
+            <div class="col-12 col-lg-6 center">
+                <div class="row-links mt-2 mb-3">
+                    <ul class="row-links-soc">
+                        
+                        
+                        
+                        
+                    <li class="row-links-soc-item mbr-fonts-style display-7">
+                            <a href="https://www.instagram.com/" class="text-primary">Instagram</a>
+                        </li><li class="row-links-soc-item mbr-fonts-style display-7">
+                            <a href="https://tiktok.com" class="text-primary">TikTok</a>
+                        </li><li class="row-links-soc-item mbr-fonts-style display-7">
+                            <a href="https://youtube.com" class="text-primary">YouTube</a>
+                        </li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/4272516" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com">Mobirise.com </a></section>
+
+<script>
+// Datos de las funciones por sala
+const funcionesPorSala = {
+    sala1: [
+        { valor: "sabado_18hs", texto: "Sábado 18hs - Las Bingueras de Eurípides", precio: 15000 },
+        { valor: "viernes_22:30hs", texto: "Viernes 22:30hs - Mabel Siempre Auténtica", precio: 20000 },
+        { valor: "jueves_22:30hs", texto: "Jueves 22:30hs - Caer", precio: 22000 }
+    ],
+    sala2: [
+        { valor: "sabado_20hs", texto: "Sábado 20hs - Cuando Frank Conoció a Carlitos", precio: 16500 },
+        { valor: "sabado_22hs", texto: "Sábado 22hs - Cuando Frank Conoció a Carlitos", precio: 16500 },
+        { valor: "domingo_20hs", texto: "Domingo 20hs - Cuando Frank Conoció a Carlitos", precio: 16500 },
+        { valor: "miercoles_20hs", texto: "Miércoles 20hs - Cuando Frank Conoció a Carlitos", precio: 16500 },
+        { valor: "jueves_20hs", texto: "Jueves 20hs - Cuando Frank Conoció a Carlitos", precio: 16500 },
+        { valor: "viernes_20hs", texto: "Viernes 20hs - Cuando Frank Conoció a Carlitos", precio: 16500 },
+        { valor: "sabado_19hs", texto: "Sábado 19hs - Al Bárbaro le doy Paz", precio: 18000 }
+    ],
+    sala3: [
+        { valor: "martes_20:30hs", texto: "Martes 20:30hs - Saraos Uranistas", precio: 12000 },
+        { valor: "sabado_17:30hs", texto: "Sábado 17:30hs - Una Historia de Humor del 900", precio: 10000 }
+    ]
+};
+
+function actualizarHorarios() {
+    const salaSelect = document.getElementById('sala-form03-j');
+    const horarioSelect = document.getElementById('horario-form03-j');
+    
+    // Limpiar opciones actuales
+    horarioSelect.innerHTML = '<option value="">Seleccionar Horario</option>';
+    
+    // Obtener la sala seleccionada
+    const salaSeleccionada = salaSelect.value;
+    
+    if (salaSeleccionada && funcionesPorSala[salaSeleccionada]) {
+        // Agregar las opciones correspondientes a la sala
+        funcionesPorSala[salaSeleccionada].forEach(function(funcion) {
+            const option = document.createElement('option');
+            option.value = funcion.valor;
+            option.textContent = funcion.texto;
+            horarioSelect.appendChild(option);
+        });
+    } else {
+        // Si no hay sala seleccionada, mostrar mensaje
+        horarioSelect.innerHTML = '<option value="">Primero selecciona una sala</option>';
+    }
+}
+
+function actualizarFormaDePago() {
+    const pagoSelect = document.getElementById('pago-form03-j');
+    const datosTarjeta = document.getElementById('datos-tarjeta');
+    const datosTransferencia = document.getElementById('datos-transferencia');
+    
+    const pagoSeleccionado = pagoSelect.value;
+
+    // Ocultar todos los campos adicionales primero
+    datosTarjeta.style.display = 'none';
+    datosTransferencia.style.display = 'none';
+
+    if (pagoSeleccionado === 'tarjeta_credito' || pagoSeleccionado === 'tarjeta_debito') {
+        datosTarjeta.style.display = 'block';
+    } else if (pagoSeleccionado === 'transferencia') {
+        datosTransferencia.style.display = 'block';
+    }
+}
+
+function procesarCompra() {
+    const form = document.querySelector('form.mbr-form');
+    if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+    }
+
+    // Recopilar datos del formulario
+    const nombre = document.getElementById('nombre-form03-j').value;
+    const cantidad = parseInt(document.getElementById('cantidad-form03-j').value, 10);
+    const salaSelect = document.getElementById('sala-form03-j');
+    const horarioSelect = document.getElementById('horario-form03-j');
+    const pagoSelect = document.getElementById('pago-form03-j');
+
+    const salaTexto = salaSelect.options[salaSelect.selectedIndex].text;
+    const horarioTexto = horarioSelect.options[horarioSelect.selectedIndex].text;
+    const pagoTexto = pagoSelect.options[pagoSelect.selectedIndex].text;
+
+    // Encontrar el precio de la función
+    const horarioValor = horarioSelect.value;
+    let funcionSeleccionada;
+    for (const sala in funcionesPorSala) {
+        const funcion = funcionesPorSala[sala].find(f => f.valor === horarioValor);
+        if (funcion) {
+            funcionSeleccionada = funcion;
+            break;
+        }
+    }
+    const precioUnitario = funcionSeleccionada ? funcionSeleccionada.precio : 0;
+    const precioTotal = cantidad * precioUnitario;
+
+    // Crear objeto con los detalles de la compra
+    const detallesCompra = {
+        nombre: nombre,
+        cantidad: cantidad,
+        sala: salaTexto,
+        funcion: horarioTexto,
+        pago: pagoTexto,
+        total: precioTotal.toLocaleString('es-AR')
+    };
+
+    // Guardar en localStorage y redirigir
+    localStorage.setItem('detallesCompra', JSON.stringify(detallesCompra));
+    window.location.href = 'page6.html';
+}
+</script>
+
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  <script src="assets/formoid/formoid.min.js"></script>  
+  
+  
+</body>
+</html>
