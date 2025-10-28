@@ -26,7 +26,10 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=jRQSdp"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=jRQSdp" type="text/css">
+  <link rel="stylesheet" href="assets/theme/css/navbar-custom.css">
+  <link rel="stylesheet" href="assets/theme/css/site-custom.css">
 
   
   
@@ -40,8 +43,10 @@
 	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
 		<div class="container">
 			<div class="navbar-brand">
-				
-				
+				<a href="index.html" class="brand-logo">
+					<img src="assets/images/logo.png" alt="Teatro Jujuy" class="logo-img">
+					<span class="brand-text">Teatro Jujuy</span>
+				</a>
 			</div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<div class="hamburger">
@@ -52,16 +57,38 @@
 				</div>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
-						<a class="nav-link link text-black text-primary display-4" href="index.html">HOME</a>
+				<ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+					<li class="nav-item">
+						<a class="nav-link modern-link" href="index.html">
+							<i class="fas fa-home"></i>
+							<span>Home</span>
+						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link link text-black show text-primary display-4" href="page3.html" aria-expanded="false">CARTELERA</a>
+						<a class="nav-link modern-link" href="page3.html">
+							<i class="fas fa-calendar-alt"></i>
+							<span>Cartelera</span>
+						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link link text-black text-primary display-4" href="page4.html">TICKETS</a>
-					</li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page1.html">SALAS</a></li></ul>
-                    <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="page2.html">Crear Cuenta</a></div>
+						<a class="nav-link modern-link" href="page4.html">
+							<i class="fas fa-ticket-alt"></i>
+							<span>Tickets</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link modern-link" href="page1.html">
+							<i class="fas fa-theater-masks"></i>
+							<span>Salas</span>
+						</a>
+					</li>
+				</ul>
+                    <div class="navbar-buttons mbr-section-btn">
+						<a class="btn btn-modern display-4" href="page2.html">
+							<i class="fas fa-user-plus"></i>
+							<span>Crear Cuenta</span>
+						</a>
+					</div>
                 </div>
 				
 			</div>
@@ -181,4 +208,4 @@
     });
 </script>
 
-<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  <script src="assets/formoid/formoid.min.js"></script>  
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  <script src="assets/theme/js/navbar-scripts.js"></script>  <script src="assets/formoid/formoid.min.js"></script>  

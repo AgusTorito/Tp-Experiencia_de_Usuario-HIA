@@ -26,7 +26,11 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=KfMGWf"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=KfMGWf" type="text/css">
+  <link rel="stylesheet" href="assets/theme/css/navbar-custom.css">
+  <link rel="stylesheet" href="assets/theme/css/site-custom.css">
+  <link rel="stylesheet" href="assets/theme/css/navbar-custom.css">
 
   
   
@@ -40,7 +44,10 @@
 	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
 		<div class="container">
 			<div class="navbar-brand">
-				
+				<a href="index.html" class="brand-logo">
+					<img src="assets/images/logo.png" alt="Teatro Jujuy" class="logo-img">
+					<span class="brand-text">Teatro Jujuy</span>
+				</a>
 			</div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<div class="hamburger">
@@ -51,16 +58,38 @@
 				</div>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
-						<a class="nav-link link text-black text-primary display-4" href="index.html">HOME</a>
+				<ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+					<li class="nav-item">
+						<a class="nav-link modern-link" href="index.html">
+							<i class="fas fa-home"></i>
+							<span>Home</span>
+						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link link text-black show text-primary display-4" href="page3.html" aria-expanded="false">CARTELERA</a>
+						<a class="nav-link modern-link" href="page3.html">
+							<i class="fas fa-calendar-alt"></i>
+							<span>Cartelera</span>
+						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link link text-black text-primary display-4" href="page4.html">TICKETS</a>
-					</li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page1.html">SALAS</a></li></ul>
-					<div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="page2.html">Crear Cuenta</a></div>
+						<a class="nav-link modern-link" href="page4.html">
+							<i class="fas fa-ticket-alt"></i>
+							<span>Tickets</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link modern-link" href="page1.html">
+							<i class="fas fa-theater-masks"></i>
+							<span>Salas</span>
+						</a>
+					</li>
+				</ul>
+					<div class="navbar-buttons mbr-section-btn">
+						<a class="btn btn-modern display-4" href="page2.html">
+							<i class="fas fa-user-plus"></i>
+							<span>Crear Cuenta</span>
+						</a>
+					</div>
 				</div>
 				
 			</div>
@@ -81,19 +110,19 @@
 					</div>
 				</div>
 			</div>
-		</div>
+        </div>
+        
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="todos">Todos</button>
+            <button class="filter-btn" data-filter="drama">Drama</button>
+            <button class="filter-btn" data-filter="comedia">Comedia</button>
+            <button class="filter-btn" data-filter="accion">Acción</button>
+        </div>
 
-		<div class="embla" data-skip-snaps="true" data-align="center" data-contain-scroll="trimSnaps" data-auto-play-interval="5" data-draggable="true">
+        <div class="embla" data-skip-snaps="true" data-align="center" data-contain-scroll="trimSnaps" data-auto-play-interval="5" data-draggable="true">
 			<div class="embla__viewport container-fluid">
 				<div class="embla__container">
-					
-					
-					
-					
-					
-					
-					
-					<div class="embla__slide slider-image item active" style="margin-left: 1rem; margin-right: 1rem;">
+                    <div class="embla__slide slider-image item active" data-category="comedia" style="margin-left: 1rem; margin-right: 1rem;">
 						<div class="slide-content">
 							<div class="item-img">
 								<div class="item-wrapper">
@@ -108,7 +137,7 @@
 							</div>
 							<div class="mbr-section-btn item-footer mt-2"><a href="page4.html" class="btn item-btn btn-primary display-7" target="_blank"><span class="mobi-mbri mobi-mbri-shopping-bag mbr-iconfont mbr-iconfont-btn"></span>Adquirir Entrada</a></div>
 						</div>
-					</div><div class="embla__slide slider-image item active" style="margin-left: 1rem; margin-right: 1rem;">
+                    </div><div class="embla__slide slider-image item active" data-category="drama" style="margin-left: 1rem; margin-right: 1rem;">
 						<div class="slide-content">
 							<div class="item-img">
 								<div class="item-wrapper">
@@ -123,7 +152,7 @@
 							</div>
 							<div class="mbr-section-btn item-footer mt-2"><a href="page4.html" class="btn item-btn btn-primary display-7" target="_blank"><span class="mobi-mbri mobi-mbri-shopping-bag mbr-iconfont mbr-iconfont-btn"></span>Adquirir Entrada</a></div>
 						</div>
-					</div><div class="embla__slide slider-image item active" style="margin-left: 1rem; margin-right: 1rem;">
+                    </div><div class="embla__slide slider-image item active" data-category="drama" style="margin-left: 1rem; margin-right: 1rem;">
 						<div class="slide-content">
 							<div class="item-img">
 								<div class="item-wrapper">
@@ -138,7 +167,7 @@
 							</div>
 							<div class="mbr-section-btn item-footer mt-2"><a href="page4.html" class="btn item-btn btn-primary display-7" target="_blank"><span class="mobi-mbri mobi-mbri-shopping-bag mbr-iconfont mbr-iconfont-btn"></span>Adquirir Entrada</a></div>
 						</div>
-					</div><div class="embla__slide slider-image item active" style="margin-left: 1rem; margin-right: 1rem;">
+                    </div><div class="embla__slide slider-image item active" data-category="comedia" style="margin-left: 1rem; margin-right: 1rem;">
 						<div class="slide-content">
 							<div class="item-img">
 								<div class="item-wrapper">
@@ -152,7 +181,7 @@
 							</div>
 							<div class="mbr-section-btn item-footer mt-2"><a href="page4.html" class="btn item-btn btn-primary display-7" target="_blank"><span class="mobi-mbri mobi-mbri-shopping-bag mbr-iconfont mbr-iconfont-btn"></span>Adquirir Entrada</a></div>
 						</div>
-					</div><div class="embla__slide slider-image item active" style="margin-left: 1rem; margin-right: 1rem;">
+                    </div><div class="embla__slide slider-image item active" data-category="comedia" style="margin-left: 1rem; margin-right: 1rem;">
 						<div class="slide-content">
 							<div class="item-img">
 								<div class="item-wrapper">
@@ -166,7 +195,7 @@
 							</div>
 							<div class="mbr-section-btn item-footer mt-2"><a href="page4.html" class="btn item-btn btn-primary display-7" target="_blank"><span class="mobi-mbri mobi-mbri-shopping-bag mbr-iconfont mbr-iconfont-btn"></span>Adquirir Entrada</a></div>
 						</div>
-					</div><div class="embla__slide slider-image item active" style="margin-left: 1rem; margin-right: 1rem;">
+                    </div><div class="embla__slide slider-image item active" data-category="drama" style="margin-left: 1rem; margin-right: 1rem;">
 						<div class="slide-content">
 							<div class="item-img">
 								<div class="item-wrapper">
@@ -223,9 +252,8 @@
                 </div>
             </div>
         </div>
-        
         <div class="row mbr-gallery">
-            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image" data-category="drama">
                 <div class="item-wrapper mb-3" data-toggle="modal" data-bs-toggle="modal" data-target="#v0nZt3jb8F-modal" data-bs-target="#v0nZt3jb8F-modal">
                     <img class="w-100" src="assets/images/evento8.jpg" alt="Mobirise Website Builder" data-slide-to="0" data-bs-slide-to="0" data-target="#lb-v0nZt3jb8F" data-bs-target="#lb-v0nZt3jb8F">
                     <div class="icon-wrapper">
@@ -234,7 +262,7 @@
                 </div>
                 
             </div>
-            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image" data-category="comedia">
                 <div class="item-wrapper mb-3" data-toggle="modal" data-bs-toggle="modal" data-target="#v0nZt3jb8F-modal" data-bs-target="#v0nZt3jb8F-modal">
                     <img class="w-100" src="assets/images/evento9.jpg" alt="Mobirise Website Builder" data-slide-to="1" data-bs-slide-to="1" data-target="#lb-v0nZt3jb8F" data-bs-target="#lb-v0nZt3jb8F">
                     <div class="icon-wrapper">
@@ -243,7 +271,7 @@
                 </div>
                 
             </div>
-            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image" data-category="accion">
                 <div class="item-wrapper mb-3" data-toggle="modal" data-bs-toggle="modal" data-target="#v0nZt3jb8F-modal" data-bs-target="#v0nZt3jb8F-modal">
                     <img class="w-100" src="assets/images/evento10.jpeg" alt="Mobirise Website Builder" data-slide-to="2" data-bs-slide-to="2" data-target="#lb-v0nZt3jb8F" data-bs-target="#lb-v0nZt3jb8F">
                     <div class="icon-wrapper">
@@ -252,7 +280,7 @@
                 </div>
                 
             </div>
-            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image" data-category="drama">
                 <div class="item-wrapper mb-3" data-toggle="modal" data-bs-toggle="modal" data-target="#v0nZt3jb8F-modal" data-bs-target="#v0nZt3jb8F-modal">
                     <img class="w-100" src="assets/images/evento11.jpeg" alt="Mobirise Website Builder" data-slide-to="3" data-bs-slide-to="3" data-target="#lb-v0nZt3jb8F" data-bs-target="#lb-v0nZt3jb8F">
                     <div class="icon-wrapper">
@@ -261,7 +289,7 @@
                 </div>
                 
             </div>
-            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image" data-category="accion">
                 <div class="item-wrapper mb-3" data-toggle="modal" data-bs-toggle="modal" data-target="#v0nZt3jb8F-modal" data-bs-target="#v0nZt3jb8F-modal">
                     <img class="w-100" src="assets/images/evento12.jpg" alt="Mobirise Website Builder" data-slide-to="4" data-bs-slide-to="4" data-target="#lb-v0nZt3jb8F" data-bs-target="#lb-v0nZt3jb8F">
                     <div class="icon-wrapper">
@@ -270,7 +298,7 @@
                 </div>
                 
             </div>
-            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image" data-category="comedia">
                 <div class="item-wrapper mb-3" data-toggle="modal" data-bs-toggle="modal" data-target="#v0nZt3jb8F-modal" data-bs-target="#v0nZt3jb8F-modal">
                     <img class="w-100" src="assets/images/evento13.jpg" alt="Mobirise Website Builder" data-slide-to="5" data-bs-slide-to="5" data-target="#lb-v0nZt3jb8F" data-bs-target="#lb-v0nZt3jb8F">
                     <div class="icon-wrapper">
@@ -279,7 +307,7 @@
                 </div>
                 
             </div>
-            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image" data-category="accion">
                 <div class="item-wrapper mb-3" data-toggle="modal" data-bs-toggle="modal" data-target="#v0nZt3jb8F-modal" data-bs-target="#v0nZt3jb8F-modal">
                     <img class="w-100" src="assets/images/evento14.png" alt="Mobirise Website Builder" data-slide-to="6" data-bs-slide-to="6" data-target="#lb-v0nZt3jb8F" data-bs-target="#lb-v0nZt3jb8F">
                     <div class="icon-wrapper">
@@ -379,7 +407,7 @@
             </div>
         </div>
     </div>
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/4272516" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/no-code-website-builder.html">No Code Website Builder</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/embla/embla.min.js"></script>  <script src="assets/embla/script.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/4272516" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/no-code-website-builder.html">No Code Website Builder</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/embla/embla.min.js"></script>  <script src="assets/embla/script.js"></script>  <script src="assets/theme/js/script.js"></script>  <script src="assets/theme/js/navbar-scripts.js"></script>  <script src="assets/theme/js/filter.js"></script>  
   
   
 </body>

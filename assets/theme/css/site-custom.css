@@ -1,0 +1,79 @@
+/* Fondo global con contraste y bordes RGB */
+body {
+    background: #0b0b0b;
+    color: #000000;
+}
+
+/* Bordes RGB sutiles alrededor del contenido */
+section {
+    position: relative;
+    z-index: 0;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    inset: -1px; /* 1px fuera para cubrir el borde */
+    border-radius: 8px;
+    pointer-events: none;
+    z-index: -1;
+    background: linear-gradient(90deg, rgba(255,0,0,0.35), rgba(0,255,0,0.35));
+    filter: blur(12px);
+    opacity: 0.35;
+}
+
+/* Footer personalizado */
+.footer2 {
+    background: radial-gradient(100% 120% at 0% 0%, rgba(255,215,0,0.06) 0%, transparent 40%),
+                linear-gradient(180deg, rgba(20,20,20,0.95), rgba(10,10,10,0.98));
+    color: #eaeaea;
+    border-top: 1px solid rgba(255,215,0,0.15);
+}
+.footer2 a { color: #ffd700; text-decoration: none; }
+.footer2 a:hover { color: #ffef9a; }
+.footer2 .row-links-soc-item a { display: inline-flex; align-items: center; gap: 8px; }
+.footer2 .row-links-soc-item a::before { content: ''; font-family: 'Font Awesome 6 Free'; font-weight: 900; opacity: .7; }
+.footer2 .row-links-soc-item:nth-child(2) a::before { content: ''; }
+.footer2 .row-links-soc-item:nth-child(3) a::before { content: ''; }
+
+/* Overlays de artistas (Home) */
+.smallImage, .largeImage { border-radius: 10px; }
+.side-features .item-wrapper, .blockContent .item-wrapper, .image-wrapper { position: relative; overflow: hidden; }
+.artist-overlay {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    padding: 10px 14px;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 80%);
+    color: #fff;
+    display: flex; align-items: center; justify-content: space-between;
+    transform: translateY(100%);
+    transition: transform .3s ease;
+}
+.item-wrapper:hover .artist-overlay, .image-wrapper:hover .artist-overlay { transform: translateY(0); }
+.artist-overlay .cta {
+    background: linear-gradient(135deg, #D2691E, #FFD700);
+    color: #000; font-weight: 700; border-radius: 999px; padding: 6px 10px; font-size: .8rem;
+}
+.artist-overlay .cta i { margin-right: 6px; }
+
+/* Mapa sección (Home) */
+.map-section { padding: 3rem 0; background: #0f0f0f; border-top: 1px solid rgba(255,215,0,.15); }
+.map-card { border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,.3); border: 1px solid rgba(255,215,0,.12); }
+.map-info { color: #eaeaea; }
+
+/* Botones de filtro (Cartelera) */
+.filter-controls { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; margin-bottom: 1.5rem; }
+.filter-btn {
+    border: 1px solid rgba(255,215,0,.35);
+    color: #ffd700; background: rgba(255,215,0,.08);
+    padding: .5rem 1rem; border-radius: 999px; cursor: pointer; transition: all .2s ease; font-weight: 600;
+}
+.filter-btn:hover { background: rgba(255,215,0,.18); }
+.filter-btn.active { background: linear-gradient(135deg, #D2691E, #FFD700); color: #1a1a1a; border-color: transparent; }
+
+/* Grid de galería (soporte filtro) */
+.mbr-gallery .item { transition: opacity .25s ease, transform .25s ease; }
+.mbr-gallery .item.hidden { opacity: 0; transform: scale(.96); pointer-events: none; }
+.embla__slide.hidden { opacity: 0; transform: scale(.96); pointer-events: none; }
+
+
